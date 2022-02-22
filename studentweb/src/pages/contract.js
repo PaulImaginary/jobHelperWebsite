@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AnnualReport = () => {
+const Contract = () => {
 return (
 	<div
 	style={{
@@ -10,9 +10,9 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>Annual Report hihi</h1>
+	<h1>Contract us</h1>
 	</div>
 );
 };
 
-export default AnnualReport;
+export default Contract;

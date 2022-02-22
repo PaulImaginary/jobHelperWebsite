@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Events = () => {
+const Testimonials = () => {
 return (
 	<div
 	style={{
@@ -10,9 +10,9 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>Welcome to Events</h1>
+	<h1>Testimonials</h1>
 	</div>
 );
 };
 
-export default Events;
+export default Testimonials;
