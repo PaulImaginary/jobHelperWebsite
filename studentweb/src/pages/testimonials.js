@@ -11,6 +11,7 @@ return (
 	}}
 	>
 	<h1>Testimonials</h1>
+	<p>hello</p>
 	</div>
 );
 };
