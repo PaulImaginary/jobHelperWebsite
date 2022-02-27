@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { useNavigate } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
+// 
+// let history = useHistory();
 const appStyle = {
     height: '250px',
     display: 'flex'
@@ -77,10 +80,23 @@ const Form = ({onSubmit}) => {
 // Usage example:
 
 const SignIn = () => {
+    const navigate = useNavigate();
     const handleSubmit = data => {
+        
+
         const json = JSON.stringify(data, null, 4);
         console.clear();
         console.log(json);
+        const uName = "abc"
+        const uPw = "1234"
+        console.log(data.username)
+        if (data.username === uName && data.password === uPw){
+          console.log("login successful")
+          navigate('/');
+          // history.push('/')
+        }else{
+          console.log("incorrect username or pw")
+        }
     };
     return (
       <div style={appStyle}>
