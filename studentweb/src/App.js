@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import Logo from './image/MU2WIL.png';
 import Home from "./pages";
 import Jobs from "./pages/jobs";
 import Contract from "./pages/contract";

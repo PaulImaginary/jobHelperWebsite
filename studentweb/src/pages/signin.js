@@ -4,6 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 // 
 // let history = useHistory();
+
+const h1Style = {
+	color: '#000000',
+	display: 'flex',
+	justifyContent: 'center'
+}
+
 const appStyle = {
     height: '250px',
     display: 'flex'
@@ -83,7 +90,6 @@ const SignIn = () => {
     const navigate = useNavigate();
     const handleSubmit = data => {
         
-
         const json = JSON.stringify(data, null, 4);
         console.clear();
         console.log(json);
@@ -99,9 +105,10 @@ const SignIn = () => {
         }
     };
     return (
-      <div style={appStyle}>
-        <Form onSubmit={handleSubmit} />
-      </div>
+        <div>
+            <h1 style={h1Style}>MU2WIL LOGIN</h1>
+            <Form onSubmit={handleSubmit} />
+       </div>
     );
 };
 
